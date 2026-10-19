@@ -1,0 +1,22 @@
+{
+  "name": "jarvis-voice-assistant",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "description": "A framework-free, embeddable voice assistant widget for any website.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build && npm run build:widget",
+    "build:widget": "vite build --config vite.widget.config.ts",
+    "preview": "vite preview",
+    "test": "vitest run"
+  },
+  "engines": { "node": ">=22" },
+  "files": ["dist", "src", "api", "README.md", "LICENSE"],
+  "devDependencies": {
+    "@types/node": "^22.20.1",
+    "typescript": "^5.9.3",
+    "vite": "^5.4.21",
+    "vitest": "^2.1.9"
+  }
+}
